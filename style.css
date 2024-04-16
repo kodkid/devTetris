@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+body {
+    background-color: silver;
+    display: flex;
+    flex-direction: column; /* Alterando a direção do fluxo flexível para coluna */
+    align-items: center; /* Centralizando os elementos horizontalmente */
+    justify-content: center; /* Centralizando os elementos verticalmente */
+    height: 100vh;
+}
+
+.titulo {
+    height: 40px;
+    width: 40svh;
+    background-color: green;
+    border: 2px solid greenyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+.bloco {
+    height: 400px;
+    width: 400px;
+    background-color: black;
+    border: 2px solid black;
+    padding: 20px;
+    box-sizing: border-box;
+}
