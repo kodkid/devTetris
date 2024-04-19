@@ -12,23 +12,23 @@ public class Main {
         String jogar = "Não";
 
         Scanner scan1 = new Scanner(System.in);
-        Scanner scan2 = new Scanner(System.in);
+
 
         System.out.println("Vc deseja jogar Tetris? |  SIM : NÃO  | ");
         jogar = scan1.nextLine();
 
         Jogador[] jogadores = new Jogador[100];
 
-        while (jogar.equals("Sim")  || jogar.equals("sim") ) {
+        while (jogar.equals("Sim")  || jogar.equals("sim") || jogar.equals("s") || jogar.equals("S") ) {
             for ( i = 0; i < 1; i++) {
                 System.out.println("Digite o seu nome");
-                 nomeJogador = scan2.nextLine();
+                 nomeJogador = scan1.nextLine();
                 Jogador ji = new Jogador(nomeJogador);
                 ji.infoJogador();
 
-                break;
             }
-
+            System.out.println("Para finalizar o programa digite qualquer tecla?" );
+            jogar = scan1.nextLine();
         }
         System.out.println("Obrigado por jogar Tetris!");
 
